@@ -1,0 +1,446 @@
+{
+    "auth": "none",
+    "calls": {
+        "AAJ": {
+            "body": "",
+            "body_type": "form_data",
+            "initialized": true,
+            "method": "post",
+            "name": "Create Bleap Project",
+            "params": {
+                "AAM": {
+                    "doc": "Name of the Bubble project to create",
+                    "key": "project_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AAN": {
+                    "allow_blank": true,
+                    "doc": "The slug of the template to use (social-basic, social-pro, dating-basic, blank-basic)",
+                    "key": "template_slug",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "ABT": {
+                    "doc": "Email of the owner",
+                    "key": "email",
+                    "optional": false,
+                    "private": true,
+                    "value": ""
+                },
+                "ABz": {
+                    "doc": "Unique Bubble ID of project to create",
+                    "key": "bubble_product_id",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.AAJ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAJ\":{\"caption\":\"Create Bleap Project\",\"fields\":{\"_p_body.response.status\":{\"ret_value\":\"text\",\"caption\":\"body response status\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\",\"status\"]},\"_p_body.response.project.slug\":{\"ret_value\":\"text\",\"caption\":\"body response project slug\",\"sample_value\":\"vinder84\",\"path\":[\"body\",\"response\",\"project\",\"slug\"]},\"_p_body.response.project.url\":{\"ret_value\":\"text\",\"caption\":\"body response project url\",\"sample_value\":\"https://vinder84.bubbleapps.io/version-test/\",\"path\":[\"body\",\"response\",\"project\",\"url\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":{\\\\\\\"status\\\\\\\":\\\\\\\"success\\\\\\\",\\\\\\\"project\\\\\\\":{\\\\\\\"slug\\\\\\\":\\\\\\\"vinder84\\\\\\\",\\\\\\\"url\\\\\\\":\\\\\\\"https://vinder84.bubbleapps.io/version-test/\\\\\\\"}}}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/create-bubble-project",
+            "url_params": {
+                "ABK": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "wrap_error": true
+        },
+        "AAQ": {
+            "initialized": true,
+            "method": "post",
+            "name": "Change Project Logo",
+            "params": {
+                "AAR": {
+                    "doc": "Project id of the Bubble project to setup",
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                },
+                "AAS": {
+                    "allow_blank": true,
+                    "doc": "Url of the image you want to use",
+                    "key": "value",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 4,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.AAQ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAQ\":{\"caption\":\"Change Project Logo\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/change_site_logo",
+            "url_params": {
+                "ABI": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "wrap_error": true
+        },
+        "AAc": {
+            "initialized": true,
+            "method": "patch",
+            "name": "Change Project Name",
+            "params": {
+                "AAd": {
+                    "doc": "Project id of the Bubble project to setup",
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                },
+                "AAe": {
+                    "doc": "Name you want to set for the product",
+                    "key": "value",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 5,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.AAc",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAc\":{\"caption\":\"Change Project Name\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/change-site-name",
+            "url_params": {
+                "ABH": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "wrap_error": true
+        },
+        "AAf": {
+            "body_type": "form_data",
+            "initialized": true,
+            "method": "post",
+            "name": "Create Bleap User",
+            "params": {
+                "AAg": {
+                    "doc": "The email of the user",
+                    "key": "email",
+                    "private": true,
+                    "value": ""
+                },
+                "AAh": {
+                    "doc": "Bubble id of user",
+                    "key": "bubble_id",
+                    "private": true,
+                    "value": ""
+                },
+                "AAi": {
+                    "allow_blank": true,
+                    "key": "first_name",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAj": {
+                    "allow_blank": true,
+                    "key": "last_name",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 1,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.AAf",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAf\":{\"caption\":\"Create Bleap User\",\"fields\":{\"_p_body.response.id\":{\"ret_value\":\"number\",\"caption\":\"body response id\",\"sample_value\":234,\"path\":[\"body\",\"response\",\"id\"]},\"_p_body.response.bubble_id\":{\"ret_value\":\"text\",\"caption\":\"body response bubble_id\",\"sample_value\":\"99999x88888\",\"path\":[\"body\",\"response\",\"bubble_id\"]},\"_p_body.response.first_name\":{\"ret_value\":\"text\",\"caption\":\"body response first_name\",\"sample_value\":\"Jahn\",\"path\":[\"body\",\"response\",\"first_name\"]},\"_p_body.response.last_name\":{\"ret_value\":\"text\",\"caption\":\"body response last_name\",\"sample_value\":\"Doe\",\"path\":[\"body\",\"response\",\"last_name\"]},\"_p_body.response.email\":{\"ret_value\":\"text\",\"caption\":\"body response email\",\"sample_value\":\"test@some.com\",\"path\":[\"body\",\"response\",\"email\"]},\"_p_body.response.created_at\":{\"ret_value\":\"text\",\"caption\":\"body response created_at\",\"sample_value\":\"2022-04-12T00:16:58.095-03:00\",\"path\":[\"body\",\"response\",\"created_at\"]},\"_p_body.response.updated_at\":{\"ret_value\":\"text\",\"caption\":\"body response updated_at\",\"sample_value\":\"2022-04-12T00:16:58.095-03:00\",\"path\":[\"body\",\"response\",\"updated_at\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":{\\\\\\\"id\\\\\\\":234,\\\\\\\"bubble_id\\\\\\\":\\\\\\\"99999x88888\\\\\\\",\\\\\\\"first_name\\\\\\\":\\\\\\\"Jahn\\\\\\\",\\\\\\\"last_name\\\\\\\":\\\\\\\"Doe\\\\\\\",\\\\\\\"email\\\\\\\":\\\\\\\"test@some.com\\\\\\\",\\\\\\\"created_at\\\\\\\":\\\\\\\"2022-04-12T00:16:58.095-03:00\\\\\\\",\\\\\\\"updated_at\\\\\\\":\\\\\\\"2022-04-12T00:16:58.095-03:00\\\\\\\"}}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/create-bleap-user",
+            "url_params": {
+                "ABJ": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "wrap_error": true
+        },
+        "ABL": {
+            "get_headers": true,
+            "initialized": true,
+            "method": "delete_method",
+            "name": "Erase Project Logo",
+            "params": {
+                "ABN": {
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 6,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.ABL",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABL\":{\"caption\":\"Erase Project Logo\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/erase_site_logo",
+            "url_params": {
+                "ABM": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            }
+        },
+        "ABO": {
+            "get_headers": true,
+            "initialized": true,
+            "method": "patch",
+            "name": "Change Value Prop",
+            "params": {
+                "ABR": {
+                    "allow_blank": false,
+                    "doc": "Project id of the Bubble project to setup",
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                },
+                "ABS": {
+                    "allow_blank": true,
+                    "doc": "Name you want to set for the project",
+                    "key": "value",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 8,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.ABO",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABO\":{\"caption\":\"Change Value Prop\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/change-value-prop",
+            "url_params": {
+                "ABQ": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            }
+        },
+        "ABU": {
+            "initialized": true,
+            "method": "post",
+            "name": "Delayed project Setup",
+            "params": {
+                "ABW": {
+                    "doc": "Project id of the Bubble project to setup",
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 3,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.ABU",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABU\":{\"caption\":\"Delayed project Setup\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/delayed-project-setup",
+            "url_params": {
+                "ABV": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            }
+        },
+        "ABX": {
+            "body": "",
+            "get_headers": true,
+            "initialized": true,
+            "method": "patch",
+            "name": "Set project premium",
+            "params": {
+                "ABZ": {
+                    "doc": "Project id of the Bubble project to make premium",
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                },
+                "ABa": {
+                    "doc": "Boolean value (true/false) to set the premium state",
+                    "key": "value",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 7,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.ABX",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABX\":{\"caption\":\"Set project premium\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/set-project-premium",
+            "url_params": {
+                "ABY": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            }
+        },
+        "ABb": {
+            "initialized": true,
+            "method": "patch",
+            "name": "Change Description",
+            "params": {
+                "ABd": {
+                    "doc": "Project id of the Bubble project",
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                },
+                "ABe": {
+                    "doc": "Description you want to set for the project",
+                    "key": "value",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 9,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.ABb",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABb\":{\"caption\":\"Change Description\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/change-description",
+            "url_params": {
+                "ABc": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            }
+        },
+        "ABf": {
+            "initialized": true,
+            "method": "patch",
+            "name": "Change Landing Img",
+            "params": {
+                "ABh": {
+                    "doc": "Project id of the Bubble project",
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                },
+                "ABi": {
+                    "doc": "Img url you want to set for the project",
+                    "key": "value",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 10,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.ABf",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABf\":{\"caption\":\"Change Landing Img\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/change-landing-img",
+            "url_params": {
+                "ABg": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            }
+        },
+        "ABj": {
+            "initialized": true,
+            "method": "patch",
+            "name": "Change Color Palette",
+            "params": {
+                "ABl": {
+                    "doc": "Project id of the Bubble project",
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                },
+                "ABm": {
+                    "doc": "Id of the color Palette",
+                    "key": "value",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 11,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.ABj",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABj\":{\"caption\":\"Change Color Palette\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/change-color-palette",
+            "url_params": {
+                "ABk": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            }
+        },
+        "ABn": {
+            "get_headers": false,
+            "initialized": false,
+            "method": "get",
+            "name": "GET User product",
+            "params": {
+                "ABp": {
+                    "doc": "Project id of the Bubble project",
+                    "key": "project_id",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.ABn",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABn\":{\"caption\":\"GET User product\",\"fields\":{\"_p_response.id\":{\"ret_value\":\"number\",\"caption\":\"response id\",\"sample_value\":1191,\"path\":[\"response\",\"id\"]},\"_p_response.bubble_id\":{\"ret_value\":\"text\",\"caption\":\"response bubble_id\",\"sample_value\":\"test-a-match\",\"path\":[\"response\",\"bubble_id\"]},\"_p_response.bubble_product_id\":{\"ret_value\":\"text\",\"caption\":\"response bubble_product_id\",\"sample_value\":null,\"path\":[\"response\",\"bubble_product_id\"]},\"_p_response.name\":{\"ret_value\":\"text\",\"caption\":\"response name\",\"sample_value\":\"TEST - A Match\",\"path\":[\"response\",\"name\"]},\"_p_response.bleap_user_id\":{\"ret_value\":\"number\",\"caption\":\"response bleap_user_id\",\"sample_value\":104,\"path\":[\"response\",\"bleap_user_id\"]},\"_p_response.created_at\":{\"ret_value\":\"text\",\"caption\":\"response created_at\",\"sample_value\":\"2022-09-12T12:51:31.042-03:00\",\"path\":[\"response\",\"created_at\"]},\"_p_response.updated_at\":{\"ret_value\":\"text\",\"caption\":\"response updated_at\",\"sample_value\":\"2022-09-12T12:51:31.042-03:00\",\"path\":[\"response\",\"updated_at\"]},\"_p_response.url\":{\"ret_value\":\"text\",\"caption\":\"response url\",\"sample_value\":\"https://test-a-match.bubbleapps.io/version-test/\",\"path\":[\"response\",\"url\"]},\"_p_response.template\":{\"ret_value\":\"text\",\"caption\":\"response template\",\"sample_value\":\"matching\",\"path\":[\"response\",\"template\"]},\"_p_response.premium\":{\"ret_value\":\"boolean\",\"caption\":\"response premium\",\"sample_value\":false,\"path\":[\"response\",\"premium\"]}}}}",
+            "url": "[API_URL]/1/user-product",
+            "url_params": {
+                "ABt": {
+                    "key": "API_URL",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "wrap_error": false
+        },
+        "ABu": {
+            "get_headers": false,
+            "initialized": true,
+            "method": "patch",
+            "name": "Allow iframe in project",
+            "params": {
+                "ABw": {
+                    "doc": "Project id of the Bubble project",
+                    "key": "project_id",
+                    "private": true,
+                    "value": "test-with-retry"
+                }
+            },
+            "publish_as": "action",
+            "rank": 12,
+            "ret_value": "api.1643136281486x462885191722467300.plugin_api.ABu",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABu\":{\"caption\":\"Allow iframe in project\",\"fields\":{\"_p_body.response\":{\"ret_value\":\"text\",\"caption\":\"body response\",\"sample_value\":\"success\",\"path\":[\"body\",\"response\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"response\\\\\\\":\\\\\\\"success\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "[API_URL]/1/allow-iframe-in-project",
+            "url_params": {
+                "ABy": {
+                    "key": "API_URL",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": true
+        }
+    },
+    "human": "Bleap API",
+    "token_param_name": ""
+}

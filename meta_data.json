@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "0": "data (things)",
+        "1": "technical",
+        "2": "small business"
+    },
+    "description": "Create a new project from Bubble with our API",
+    "image": "//s3.amazonaws.com/appforest_uf/f1649185497336x842045754628852000/Bleap-logo-600.png",
+    "license": "open_source",
+    "name": "Bleap API",
+    "plugin_instructions": "Bleap methods to integrate with Bubble"
+}
